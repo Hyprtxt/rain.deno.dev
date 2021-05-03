@@ -1,5 +1,6 @@
 welcome:
 	cat Makefile
-run: 
-	deno run --allow-net --allow-write --allow-read --unstable bigscrape.js
-	
+run:
+	deployctl run website.ts
+develop:
+	deployctl run --watch website.ts
